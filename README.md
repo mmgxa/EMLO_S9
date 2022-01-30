@@ -49,3 +49,7 @@ This completes the configuration of the notebook.
 
 Wait until the status changes to running.
 
+
+# UPDATE!
+
+In the code and also the video, the inference failed (despite successful training). This was because the `model_fn` was omitted in the `cifar100.py` file. This is a required function for inference to work. After adding it, the inference also took place successfully. Unfortunately, this second run was not recorded, but the output can be seen in the notebook uploaded.
